@@ -1,0 +1,7 @@
+START,a,4
+START,b,3
+START,c,9
+a,b,9
+b,c,2
+b,GOAL,5
+c,GOAL,1

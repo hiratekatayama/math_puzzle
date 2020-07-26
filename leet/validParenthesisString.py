@@ -59,6 +59,21 @@ class Solution(object):
 
       return dp[0][-1]
 
+  def checkValidString_3(self, s):
+    lo = hi = 0
+    for c in s:
+      if c == "(":
+        lo += 1
+      else:
+        lo -= 1
+
+      if hi
+      hi += 1 if c != ")" else -1
+      if hi < 0 : break
+      lo = max(lo, 0)
+
+    return lo == 0
+
 if __name__ == '__main__':
   input = "(*)"
 
